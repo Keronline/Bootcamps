@@ -1,0 +1,30 @@
+﻿SQL Server
+Comandos
+Criar e deletar database
+Estando em new query:
+create database name_database;
+drop database name_databse;
+Seleção de 
+Seleção de Colunas
+Sem distinção entre os elementos
+SELECT coluna1, coluna2
+FROM name_tabela;
+Sem duplicações
+        SELECT DISTINCT coluna1
+        FROM name_tabela;
+
+
+Manipulando os dados
+Retorno específico
+        SELECT coluna1, coluna2
+FROM name_tabela
+WHERE condição; //condição é: name_coluna operador especificador;
+Número de linhas que satisfazem uma condição
+        SELECT count(name_coluna)
+        FROM name_tabela;
+Número de linhas que satisfazem uma condição sem repetição
+        SELECT count(DISTINCT name_coluna)
+        FROM name_tabela;
+Mostrar os primeiro X elementos de uma tabela
+        SELECT TOP 10 *
+        FROM name_tabela;
