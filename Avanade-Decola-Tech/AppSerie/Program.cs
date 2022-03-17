@@ -47,10 +47,30 @@ namespace APP.Series
         {
             System.Console.WriteLine("Inserir Série");
 
-            foreach(var i in Enum.GetValues(typeof(Genero)))
+            foreach(int i in Enum.GetValues(typeof(Genero)))
             {
                 System.Console.WriteLine($"{i} - {Enum.GetName(typeof(Genero), i)}");
             }
+			int indiceSerie = repositorio.ProximoId();
+
+			Console.Write("Digite o gênero entre as opções acima: ");
+			int entradaGenero = int.Parse(Console.ReadLine());
+
+			Console.Write("Digite o Título da Série: ");
+			string entradaTitulo = Console.ReadLine();
+
+			Console.Write("Digite o Ano de Início da Série: ");
+			int entradaAno = int.Parse(Console.ReadLine());
+
+			Console.Write("Digite a Descrição da Série: ");
+			string entradaDescricao = Console.ReadLine();
+
+			Serie insereSerie = new Serie(id: indiceSerie,
+										genero: (Genero)entradaGenero,
+										titulo: entradaTitulo,
+										ano: entradaAno,
+										descricao: entradaDescricao);
+			repositorio.Insere(insereSerie);
 
         }
 
@@ -75,7 +95,7 @@ namespace APP.Series
         {
             Console.WriteLine("Listar Séries");
 
-            var lista = repositorio.Lista();
+            List<Serie> lista = repositorio.Lista();
 
             if(lista.Count == 0)
             {
@@ -83,9 +103,9 @@ namespace APP.Series
             }
             else{
 
-                foreach(var serie in lista)
+                foreach(Serie serie in lista)
                 {
-                    System.Console.WriteLine($"#ID {serie.retornaId}: - {serie.retornaTitulo}");
+                    System.Console.WriteLine($"#ID {serie.retornaId()}: - {serie.retornaTitulo()}");
                 }
 
             }
@@ -94,7 +114,7 @@ namespace APP.Series
         private static string ObterOpcaoUsuario()
 		{
 			Console.WriteLine();
-			Console.WriteLine("DIO Séries a seu dispor!!!");
+			Console.WriteLine("Seja bem-vinde ao Catálogo de Séries da DIO!");
 			Console.WriteLine("Informe a opção desejada:");
 
 			Console.WriteLine("1- Listar séries");

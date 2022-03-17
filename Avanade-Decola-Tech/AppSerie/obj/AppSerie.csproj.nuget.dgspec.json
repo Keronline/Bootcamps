@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\bootcamp\\APP\\AppSerie\\AppSerie.csproj": {}
+    "C:\\Users\\User\\Desktop\\Programação\\teste\\Avanade-Decola-Tech\\AppSerie\\AppSerie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\bootcamp\\APP\\AppSerie\\AppSerie.csproj": {
+    "C:\\Users\\User\\Desktop\\Programação\\teste\\Avanade-Decola-Tech\\AppSerie\\AppSerie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\bootcamp\\APP\\AppSerie\\AppSerie.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Programação\\teste\\Avanade-Decola-Tech\\AppSerie\\AppSerie.csproj",
         "projectName": "AppSerie",
-        "projectPath": "C:\\Users\\User\\Desktop\\bootcamp\\APP\\AppSerie\\AppSerie.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Programação\\teste\\Avanade-Decola-Tech\\AppSerie\\AppSerie.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\bootcamp\\APP\\AppSerie\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Programação\\teste\\Avanade-Decola-Tech\\AppSerie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
